@@ -2,7 +2,7 @@
 <resources>
 
     <string-array name="estados">
-        <item>-Estado-</item>
+        <item>Entidad Federativa</item>
         <item>Aguascalientes</item>
         <item>Baja California</item>
         <item>Baja California Sur</item>
