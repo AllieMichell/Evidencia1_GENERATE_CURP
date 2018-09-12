@@ -11,6 +11,10 @@
         android:title="Ajustes"
         app:showAsAction="never"></item>
 
+    <item android:id="@+id/menu_codigo"
+        android:title="Código verificación"
+        app:showAsAction="never"></item>
+
     <item android:id="@+id/menu_logout"
         android:title="Cerrar sesión"
         app:showAsAction="never"></item>
