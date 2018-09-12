@@ -67,9 +67,6 @@ public class MainActivity_GenCURP extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //SI NO ME FUNCIONA CON ESTAS DECLARACIONES DEBO DE DESCOMENTEAR ESTOS PUNTOS SIGUIENTES
-        //radioGroup = findViewById(R.id.radio_genero);
-
     }
 
     @Override
@@ -84,6 +81,7 @@ public class MainActivity_GenCURP extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.menu_back:
                 Toast.makeText(this, "Regresar", Toast.LENGTH_SHORT).show();
+                finish();
                 return true;
 
             case R.id.menu_settings:
@@ -96,6 +94,7 @@ public class MainActivity_GenCURP extends AppCompatActivity {
 
             case R.id.menu_logout:
                 Toast.makeText(this, "Cerrar sesión", Toast.LENGTH_SHORT).show();
+                finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

@@ -105,4 +105,48 @@ public class Cliente_CURP implements Parcelable {
             return new Cliente_CURP[size];
         }
     };
+
+    public String getCurp(){
+
+        apellidop = apellidop.toUpperCase();
+        apellidom = apellidom.toUpperCase();
+        nombre = nombre.toUpperCase();
+
+
+        //Primera Letra de apellido paterno y vocal del apellido
+        char ch1 = apellidop.charAt(0);
+        char ch2 = 0;
+        for (int i = 1; i < apellidop.length(); i++) {
+            char vocales = apellidop.charAt(i);
+            if (vocales == 'A' || vocales == 'E' || vocales == 'I' || vocales == 'O' || vocales == 'U') {
+                ch2 = vocales;
+                break;
+            }
+        }
+        //Primera letra de apellido materno
+        char ch3 = apellidom.charAt(0);
+        //Primera letra de nombre
+        char ch4 = nombre.charAt(0);
+        //Digitos del año nacimiento
+        String anio = String.valueOf(getFechanA());
+        char ch5 = anio.charAt(2);
+        char ch6 = anio.charAt(3);
+        //Digitos del mes de nacimiento
+        String mes = String.valueOf(getFechanM());
+        char ch7;
+        char ch8;
+        ch7 = mes.charAt(0);
+        ch8 = mes.charAt(1);
+
+        //Digito del dia de nacimiento
+        String dia = String.valueOf(getFechanD());
+        char ch9;
+        char ch10;
+        ch9 = dia.charAt(0);
+        ch10 = dia.charAt(1);
+
+        return (ch1+""+ch2+""+ch3+""+ch4+""+ch5+""+ch6+""+ch7+""+ch8+""+ch9+""+ch10);
+    }
+
+
 }

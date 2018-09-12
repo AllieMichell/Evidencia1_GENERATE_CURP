@@ -223,34 +223,27 @@
             </Spinner>
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/ll_buttons"
+        <Button
+            android:id="@+id/btn_cre"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:text="Generar"
+            android:textAllCaps="false"
             android:layout_below="@+id/ll_enti"
-            android:layout_margin="8dp"
-            android:layout_centerHorizontal="true">
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/btn_cre"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:text="Generar"
-                android:textAllCaps="false"
-                android:textColor="@android:color/holo_green_dark"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/btn_can"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:text="Cancelar"
-                android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textColor="@android:color/holo_red_light"
-                android:textStyle="bold" />
-
-        </LinearLayout>
+        <Button
+            android:id="@+id/btn_can"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:layout_below="@+id/btn_cre"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
